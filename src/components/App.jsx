@@ -1,16 +1,24 @@
-import React, {Component} from "react";
+/* eslint-disable react/jsx-no-target-blank */
+import React from "react";
 import Wallet from "./Wallet";
+import Loot from "./Loot";
 
-class App extends Component {
-  render () {
-    return (
+const App = () => {
+  return (
+    <div>
+      <h2>Loot Check</h2>
+      <hr />
+      <Wallet />
+      <hr />
+      <Loot />
       <div>
-        <h2>Loot Check</h2>
-        <hr />
-        <Wallet />
+        Powered by{" "}
+        <a target="_blank" href="https://www.coindesk.com/price">
+          Coindesk
+        </a>
       </div>
-    )
-  }
-}
+    </div>
+  );
+};
 
 export default App;
